@@ -32,13 +32,13 @@ class Exercise extends Controller
                 'division.required_without_all' => 'Please select at least one operation!',
                 'min_number.required' => 'Please enter a minimum number!',
                 'max_number.required' => 'Please enter a maximum number!',
-                'min_number.integer' => 'Please enter an integer!',
-                'max_number.integer' => 'Please enter an integer!',
-                'min_number.lt' => 'Please enter a number less than the maximum number!',
-                'max_number.gt' => 'Please enter a number greater than the minimum number!',
+                'min_number.integer' => 'Please enter a minimum number as an integer!',
+                'max_number.integer' => 'Please enter a maximum number as an integer!',
+                'min_number.lt' => 'Please enter a minimum number less than the maximum number!',
+                'max_number.gt' => 'Please enter a maximum number greater than the minimum number!',
                 'quantity.required' => 'Please enter a quantity!',
-                'quantity.integer' => 'Please enter an integer!',
-                'quantity.gt' => 'Please enter a number greater than 0!',
+                'quantity.integer' => 'Please enter a quantity as an integer!',
+                'quantity.gt' => 'Please enter a quantity greater than 0!',
                 
             ]
             );
