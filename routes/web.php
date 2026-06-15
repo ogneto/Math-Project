@@ -10,4 +10,5 @@ Route::controller(MainController::class)->group(function() {
 
 Route::controller(Exercise::class)->group(function() {
     Route::get('/generate-exercises', 'index')->name('generate-exercises');
+    Route::post('generate-exercises', 'store')->name('exercises-store');
 });

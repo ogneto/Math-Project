@@ -11,4 +11,8 @@ class Exercise extends Controller
     public function index(): View {
         return view('generate-exercises');
     }
+
+    public function store(Request $request) {
+        dd($request->all());
+    }
 }
