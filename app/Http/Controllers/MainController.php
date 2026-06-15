@@ -9,4 +9,8 @@ class MainController extends Controller
     public function index(): View {
         return view('welcome');
     }
+
+    public function about(): View {
+        return view('about');
+    }
 }

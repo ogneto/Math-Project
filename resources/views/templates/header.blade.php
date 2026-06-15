@@ -11,7 +11,7 @@
             Options
           </button>
           <ul class="dropdown-menu dropdown-menu-dark">
-            <li><a class="dropdown-item" href="#">About</a></li>
+            <li><a class="dropdown-item" href="{{ route('about') }}" target="_blank">About</a></li>
             <li><a class="dropdown-item" href="{{ route('generate-exercises') }}" target="_blank">Generate Exercises</a></li>
           </ul>
         </li>
