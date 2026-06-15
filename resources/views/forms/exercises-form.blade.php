@@ -21,7 +21,7 @@
                 <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="multiplication" id="multiplication" name="multiplication" {{ old('multiplication') ? 'checked' : '' }}>
                     <label class="form-check-label" for="multiplication">
-                        *
+                        x
                     </label>
                 </div>
 
