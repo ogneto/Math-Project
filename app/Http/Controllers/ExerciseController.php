@@ -53,7 +53,7 @@ class ExerciseController extends Controller
         $exercises = [];
         $exercises = $this->generateExercises($operations, $minValue, $maxValue, $quantity);
 
-        dd($exercises);
+        return view('show-exercises')->with('exercises', $exercises);
 
     }
 
@@ -101,7 +101,8 @@ class ExerciseController extends Controller
                 case '/':
                     while ($n2 == 0) {$n2 = rand($minValue, $maxValue);}
                     $exercise = "$n1 ÷ $n2";
-                    $sollution = $n1 / $n2;  
+                    $sollution = $n1 / $n2;
+                    $sollution = round($sollution, 2);
                     break;
                 default:
                     $exercise = "There was a mistake";
@@ -110,7 +111,7 @@ class ExerciseController extends Controller
             }
 
             $exercises[] = [
-                'number' => $i,
+                'number' => $i + 1,
                 'exercise' => $exercise,
                 'sollution' => $sollution,
             ];
